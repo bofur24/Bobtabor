@@ -34,11 +34,53 @@ namespace PracticeWork
             //resultLabel.Text = (string)j;
             //resultLabel.Text = j.ToString();
 
-            string i = inputTextBox.Text;
-            int j = int.Parse(i);
-            int k = j + 1;
+            //string i = inputTextBox.Text;
+            //int j = int.Parse(i);
+            //int k = j + 1;
 
-            resultLabel.Text = k.ToString();    
+            //resultLabel.Text = k.ToString();    
+
+            int i = 1;
+            int j = 2;
+            //int result = i + j;
+            //int result = i - j;
+            //int result = i * j;
+            //int result = i / j;
+
+            //i = i + 1;
+            //i += 1;
+            //i++;
+            //i--;
+
+            //int myInteger = (5 + 1) * 7; // 42
+            //int myInteger2 = 5 + 1 * 7; // 12
+            //resultLabel.Text = myInteger.ToString();
+
+            double myDouble = 5.5;
+            int myInteger = 7;
+            int myOtherInteger = 4;
+
+            //double myResult = mydouble + myInteger;
+            //int myResult = (int)myDouble + myInteger;
+            //int myResult = myInteger / myOtherInteger;
+            //double myResult = (double)myInteger / (double)myOtherInteger;
+            //resultLabel.Text = myResult.ToString();
+
+            int firstNumber = 2000000000;
+            int secondNumber = 20000000;
+            long resultNumber;
+
+            checked
+            {
+                resultNumber = firstNumber * secondNumber;
+            }
+
+            resultLabel.Text = resultNumber.ToString();
+
+
+
+
+
 
 
         }
