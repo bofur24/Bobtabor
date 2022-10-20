@@ -21,6 +21,28 @@
                     <br />
                     <asp:Label ID="resultLabel" runat="server" Text=""></asp:Label>
                 </p>
+                <p>
+                    Is <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox> equal to <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                    <br />
+                    <br />
+                    <asp:CheckBox ID="coolCheckBox" runat="server" Text="Are you cool?" />
+                    <br />
+                    If you could eat only one food for the rest of your life, what would you choose?
+                    <br />
+                    <asp:RadioButton ID="PizzaRadioButton" runat="server" Text="Pizza" GroupName="FoodGroup" Checked="True" />
+                    <br />
+                    <asp:RadioButton ID="SaladRadioButton" runat="server" Text="Salad" GroupName="FoodGroup" />
+                    <br />
+                    <asp:RadioButton ID="PBJRadioButton" runat="server" Text="Peanut Butter and Jelly" GroupName="FoodGroup" />
+                    <br />
+                    <br />
+                    <asp:Button ID="okButton2" runat="server" Text="OK" OnClick="okButton2_Click" />
+                    <br />
+                    <br />                    
+                    <br />
+                    <asp:Label ID="resultLabel2" runat="server" Text=""></asp:Label>
+
+                </p>
             </div>
         </div>
     </form>

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -66,24 +67,55 @@ namespace PracticeWork
             //double myResult = (double)myInteger / (double)myOtherInteger;
             //resultLabel.Text = myResult.ToString();
 
-            int firstNumber = 2000000000;
-            int secondNumber = 20000000;
-            long resultNumber;
+            //int firstNumber = 2000000000;
+            //int secondNumber = 20000000;
+            //long resultNumber;
 
-            checked
+            //checked
+            //{
+            //    resultNumber = firstNumber * secondNumber;
+            //}
+
+            //resultLabel.Text = resultNumber.ToString();
+        }
+
+        protected void okButton2_Click(object sender, EventArgs e)
+        {
+            resultLabel2.Text = "";
+            //if (TextBox1.Text == TextBox2.Text)
+            //{
+            //    resultLabel2.Text = "Yes! They're equal!";
+            //}
+            //else
+            //{
+            //    resultLabel2.Text = "No! They're not equal!";
+            //}
+            //if (coolCheckBox.Checked)
+            //{
+            //    resultLabel2.Text = "Yes, you are definitely cool.";
+            //}
+            //else
+            //{
+            //    resultLabel2.Text = "Don't be so hard on yourself.";
+            //}
+            if (PizzaRadioButton.Checked)
             {
-                resultNumber = firstNumber * secondNumber;
+                resultLabel2.Text = "You must be from Chicago!";
             }
-
-            resultLabel.Text = resultNumber.ToString();
-
-
-
-
-
+            else if (SaladRadioButton.Checked)
+            {
+                resultLabel2.Text = "You must be healthy";
+            }
+            else if (PBJRadioButton.Checked)
+            {
+                resultLabel2.Text = "You must be a fun loving person!";
+            }
+            else
+            {
+                resultLabel2.Text = "Please select one of the options.";
+            }
 
 
         }
-
     }
 }
