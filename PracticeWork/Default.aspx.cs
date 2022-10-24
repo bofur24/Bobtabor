@@ -98,22 +98,33 @@ namespace PracticeWork
             //{
             //    resultLabel2.Text = "Don't be so hard on yourself.";
             //}
-            if (PizzaRadioButton.Checked)
-            {
-                resultLabel2.Text = "You must be from Chicago!";
-            }
-            else if (SaladRadioButton.Checked)
-            {
-                resultLabel2.Text = "You must be healthy";
-            }
-            else if (PBJRadioButton.Checked)
-            {
-                resultLabel2.Text = "You must be a fun loving person!";
-            }
-            else
-            {
-                resultLabel2.Text = "Please select one of the options.";
-            }
+            //if (PizzaRadioButton.Checked)
+            //{
+            //    resultLabel2.Text = "You must be from Chicago!";
+            //}
+            //else if (SaladRadioButton.Checked)
+            //{
+            //    resultLabel2.Text = "You must be healthy";
+            //}
+            //else if (PBJRadioButton.Checked)
+            //{
+            //    resultLabel2.Text = "You must be a fun loving person!";
+            //}
+            //else
+            //{
+            //    resultLabel2.Text = "Please select one of the options.";
+            //}
+
+            //resultLabel2.Text = (TextBox1.Text == TextBox2.Text) ? "Yes" : "No";
+
+
+            //resultLabel2.Text = (coolCheckBox.Checked)
+            //    ? "I'm teaching an old dog new tricks!" 
+            //    : "Young whippersnapper! Get off my lawn!";
+
+            int result = (TextBox1.Text == TextBox2.Text) ? 100 : 50;
+
+            resultLabel2.Text = result.ToString();
 
 
         }
