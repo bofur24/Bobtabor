@@ -12,7 +12,7 @@ namespace PracticeWork
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            ComparisonTypeLabel.Text = "equal to";
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -127,6 +127,11 @@ namespace PracticeWork
             resultLabel2.Text = result.ToString();
 
 
+        }
+
+        protected void ComparisonOkButton_Click(object sender, EventArgs e)
+        {
+            ComparisonResultLabel.Text = (ComparisonTextBox1.Text == ComparisonTextBox2.Text) ? "Yes" : "No"; 
         }
     }
 }
