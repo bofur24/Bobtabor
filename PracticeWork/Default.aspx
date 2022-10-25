@@ -21,6 +21,7 @@
                     <br />
                     <asp:Label ID="resultLabel" runat="server" Text=""></asp:Label>
                 </p>
+                <hr />
                 <p>
                     Is <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox> equal to <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
                     <br />
@@ -43,6 +44,20 @@
                     <asp:Label ID="resultLabel2" runat="server" Text=""></asp:Label>
 
                 </p>
+                <hr />
+                <div>
+                    <h1>Comparison and Logical Operators</h1>
+                    Is <asp:TextBox ID="ComparisonTextBox1" runat="server"></asp:TextBox> <asp:Label ID="ComparisonTypeLabel" runat="server" Text="Label"> </asp:Label> <asp:TextBox ID="ComparisonTextBox2" runat="server"></asp:TextBox> ?
+                    <br />
+                    <br />
+                    <asp:CheckBox ID="ComparisonCheckBox" runat="server" Text="I am checked" />
+                    <br />
+                    <br />
+                    <asp:Button ID="ComparisonOkButton" runat="server" Text="OK" OnClick="ComparisonOkButton_Click" />
+                    <br />
+                    <br />
+                    <asp:Label ID="ComparisonResultLabel" runat="server" Text=""></asp:Label>
+                </div>
             </div>
         </div>
     </form>
