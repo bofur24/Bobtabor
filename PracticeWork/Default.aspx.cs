@@ -12,7 +12,7 @@ namespace PracticeWork
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            ComparisonTypeLabel.Text = "equal to";
+            ComparisonTypeLabel.Text = "greater than";
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -131,7 +131,34 @@ namespace PracticeWork
 
         protected void ComparisonOkButton_Click(object sender, EventArgs e)
         {
-            ComparisonResultLabel.Text = (ComparisonTextBox1.Text == ComparisonTextBox2.Text) ? "Yes" : "No"; 
+            ComparisonResultLabel.Text = "";
+
+            //ComparisonResultLabel.Text = (ComparisonTextBox1.Text == ComparisonTextBox2.Text) ? "Yes" : "No"; 
+
+            //int first = int.Parse(ComparisonTextBox1.Text);
+            //int second = int.Parse(ComparisonTextBox2.Text);
+
+            //ComparisonResultLabel.Text = (first > second) ? "Yes" : "No";
+            //ComparisonResultLabel.Text = (first < second) ? "Yes" : "No";
+            //ComparisonResultLabel.Text = (first >= second) ? "Yes" : "No";
+            //ComparisonResultLabel.Text = (first <= second) ? "Yes" : "No";
+
+            //ComparisonResultLabel.Text = (!ComparisonCheckBox.Checked) ? "No" : "Yes";
+
+            //if (ComparisonCheckBox.Checked 
+            //    && ComparisonTextBox1.Text == "Keith" 
+            //    && ComparisonTextBox2.Text == "Heffington")
+            //{
+            //    ComparisonResultLabel.Text = "Perfect trifecta!";
+            //}
+
+            if (ComparisonCheckBox.Checked
+              || ComparisonTextBox1.Text == "Keith"
+              || ComparisonTextBox2.Text == "Heffington")
+            {
+                ComparisonResultLabel.Text = "One out of three ain't bad.";
+            }
+
         }
     }
 }
