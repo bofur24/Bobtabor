@@ -78,49 +78,49 @@ namespace ChallengeFirstPapaBobsWebsite
         protected global::System.Web.UI.WebControls.RadioButton DeepRadioButton;
 
         /// <summary>
-        /// CheckBox1 control.
+        /// PeperoniCheckBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox CheckBox1;
+        protected global::System.Web.UI.WebControls.CheckBox PeperoniCheckBox;
 
         /// <summary>
-        /// CheckBox2 control.
+        /// OnionsCheckBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox CheckBox2;
+        protected global::System.Web.UI.WebControls.CheckBox OnionsCheckBox;
 
         /// <summary>
-        /// CheckBox3 control.
+        /// GreenPeppersCheckBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox CheckBox3;
+        protected global::System.Web.UI.WebControls.CheckBox GreenPeppersCheckBox;
 
         /// <summary>
-        /// CheckBox4 control.
+        /// RedPeppersCheckBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox CheckBox4;
+        protected global::System.Web.UI.WebControls.CheckBox RedPeppersCheckBox;
 
         /// <summary>
-        /// CheckBox5 control.
+        /// AnchoviesCheckBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox CheckBox5;
+        protected global::System.Web.UI.WebControls.CheckBox AnchoviesCheckBox;
 
         /// <summary>
         /// PurchaseButton control.
