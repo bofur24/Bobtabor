@@ -58,6 +58,14 @@
                     <br />
                     <asp:Label ID="ComparisonResultLabel" runat="server" Text=""></asp:Label>
                 </div>
+                <div>
+                    <h1>Working with DateTime</h1>
+                    <br />
+                    <asp:Button ID="TimeButton" runat="server" Text="OK" OnClick="TimeButton_Click" />
+                    <br />
+                    <asp:Label ID="TimeLabel" runat="server"></asp:Label>
+                </div> 
+
             </div>
         </div>
     </form>
