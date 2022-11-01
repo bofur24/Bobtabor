@@ -160,5 +160,23 @@ namespace PracticeWork
             }
 
         }
+
+        protected void TimeButton_Click(object sender, EventArgs e)
+        {
+            //DateTime myValue = DateTime.Now;
+            //TimeLabel.Text = myValue.ToString();
+            //TimeLabel.Text = myValue.ToLongDateString();  Day Month Day# Year#
+            //TimeLabel.Text = myValue.ToLongTimeString(); HH:MM:SS AM/PM 
+            //TimeLabel.Text = myValue.ToShortDateString(); MM/DD/YY   
+            //TimeLabel.Text = myValue.ToShortTimeString(); HH:MM AM/PM
+
+            //TimeLabel.Text = myValue.AddDays(2).ToString();
+            //TimeLabel.Text = myValue.Month.ToString();
+            //TimeLabel.Text = myValue.DayOfWeek.ToString();
+            //TimeLabel.Text = myValue.DayOfYear.ToString();
+
+            DateTime myValue = new DateTime(1985, 3, 4);
+            TimeLabel.Text = myValue.ToLongDateString();
+        }
     }
 }
