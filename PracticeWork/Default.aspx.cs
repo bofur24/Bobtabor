@@ -178,5 +178,45 @@ namespace PracticeWork
             DateTime myValue = new DateTime(1985, 3, 4);
             TimeLabel.Text = myValue.ToLongDateString();
         }
+
+        protected void TimeSpanButton_Click(object sender, EventArgs e)
+        {
+            // Days.Hours:Minutes:Seconds.milliseconds
+
+            TimeSpan myTimeSpan = TimeSpan.Parse("1.2:3:30.5");
+
+            DateTime myBirthday = DateTime.Parse("03/04/1989");
+            TimeSpan myAge = DateTime.Now.Subtract(myBirthday);
+
+
+
+            //TimeSpanLabel.Text = myAge.Hours.ToString();
+            TimeSpanLabel.Text = myAge.TotalDays.ToString();
+        }
+
+        protected void GetDateButton_Click(object sender, EventArgs e)
+        {
+            DateLabel.Text = myCalendar.SelectedDate.ToShortDateString();
+        }
+
+        protected void SetDateButton_Click(object sender, EventArgs e)
+        {
+            myCalendar.SelectedDate = DateTime.Parse("11/2/2022");
+        }
+
+        protected void ShowDateButton_Click(object sender, EventArgs e)
+        {
+            myCalendar.VisibleDate = DateTime.Parse("03/04/1985");
+        }
+
+        protected void SelectedWeekButton_Click(object sender, EventArgs e)
+        {
+            DateLabel.Text = "Week of " + myCalendar.SelectedDate.ToShortDateString();
+        }
+
+        protected void myCalendar_SelectionChanged(object sender, EventArgs e)
+        {
+            DateLabel.Text = myCalendar.SelectedDate.ToShortDateString();
+        }
     }
 }
