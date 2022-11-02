@@ -58,6 +58,7 @@
                     <br />
                     <asp:Label ID="ComparisonResultLabel" runat="server" Text=""></asp:Label>
                 </div>
+                <hr />
                 <div>
                     <h1>Working with DateTime</h1>
                     <br />
@@ -65,6 +66,35 @@
                     <br />
                     <asp:Label ID="TimeLabel" runat="server"></asp:Label>
                 </div> 
+                <hr />
+                <div>
+                    <h1>Working with spans of time (TimeSpan)</h1>
+                    <br />
+                    <asp:Button ID="TimeSpanButton" runat="server" Text="OK" OnClick="TimeSpanButton_Click" />
+                    <br />
+                    <br />
+                    <asp:Label ID="TimeSpanLabel" runat="server"></asp:Label>                   
+                </div>
+                <div>
+                    <h1>Working with the Calendar Server Control</h1>
+                    <br />
+                    <asp:Calendar ID="myCalendar" runat="server" SelectionMode="Day" OnSelectionChanged="myCalendar_SelectionChanged"></asp:Calendar>
+                    <br />
+                    <br />
+                    <asp:Button ID="GetDateButton" runat="server" Text="Get Date" OnClick="GetDateButton_Click" />
+                    <asp:Button ID="SetDateButton" runat="server" Text="Set Date" OnClick="SetDateButton_Click" />
+                    <asp:Button ID="ShowDateButton" runat="server" Text="Show Date" OnClick="ShowDateButton_Click" />
+                    <asp:Button ID="SelectedWeekButton" runat="server" Text="Selected Week" OnClick="SelectedWeekButton_Click" />
+                    <br />
+                    <br />
+                    <asp:Label ID="DateLabel" runat="server"></asp:Label>
+                </div>
+
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
 
             </div>
         </div>
