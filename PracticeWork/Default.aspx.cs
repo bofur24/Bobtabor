@@ -229,5 +229,28 @@ namespace PracticeWork
         {
             myResultLabel.Text = myTextBox.Text + " - " + myCalendar1.SelectedDate.ToShortDateString();
         }
+
+        protected void TotalButton_Click(object sender, EventArgs e)
+        {
+            //string result = string.Format("Thank you, {0}, for your business", NameTextBox3.Text);
+            int ss = int.Parse(SocialSecurityNumberTextBox.Text);
+            long phone = long.Parse(PhonNumberTextBox.Text);
+            double salary = double.Parse(SalaryTextBox.Text); 
+            
+            string result = string.Format("Thank you, {0}, for your business. " +
+                "<br>Your social Security number is: {1:000-00-0000}" +
+                "<br> Phone: {2: (000) 000-0000}" + 
+                "<br> Loan Date: {3: ddd -- d, M, yy}" +
+                "<br> Salary: {4:C}",  
+                NameTextBox3.Text, 
+                ss, 
+                phone,
+                LoanDateCalendar.SelectedDate,
+                salary);
+            
+            
+            
+            TotalLabel.Text = result;
+        }
     }
 }
