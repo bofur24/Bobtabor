@@ -101,7 +101,33 @@
                     <br />
                     <asp:Label ID="myResultLabel" runat="server" Text="Label"></asp:Label>
                 </div>
+                <div>
+                    <h1>Loan Application Form</h1>
+                    <p>
+                        Name: <asp:TextBox ID="NameTextBox3" runat="server"></asp:TextBox>
+                    </p>
+                    <p>
+                        Phone Number: <asp:TextBox ID="PhonNumberTextBox" runat="server"></asp:TextBox>
+                    </p>
+                    <p>
+                        Social Security Number: <asp:TextBox ID="SocialSecurityNumberTextBox" runat="server"></asp:TextBox>
+                    </p>
+                    <p>
+                        Loan Origination Date:
+                        <br />
+                        <asp:Calendar ID="LoanDateCalendar" runat="server"></asp:Calendar>
+                    </p>
+                    <p>
+                        Salary: <asp:TextBox ID="SalaryTextBox" runat="server"></asp:TextBox>
+                    </p>
+                    <p>
+                        <asp:Button ID="TotalButton" runat="server" Text="Total" OnClick="TotalButton_Click" />
+                    </p>
+                    <p>
+                        <asp:Label ID="TotalLabel" runat="server"></asp:Label>
+                    </p>
 
+                </div>
                     <br />
                     <br />
                     <br />
