@@ -19,7 +19,7 @@
                 <asp:Calendar ID="Calendar2" runat="server"></asp:Calendar>
             </p>
             <p>
-                <asp:Button ID="okButton" runat="server" Text="OK" />
+                <asp:Button ID="okButton" runat="server" Text="OK" OnClick="okButton_Click" />
             </p>
             <p>
                 <asp:Label ID="resultLabel" runat="server"></asp:Label>
