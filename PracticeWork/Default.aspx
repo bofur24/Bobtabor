@@ -89,6 +89,18 @@
                     <br />
                     <asp:Label ID="DateLabel" runat="server"></asp:Label>
                 </div>
+                <div>
+                    <asp:TextBox ID="myTextBox" runat="server"></asp:TextBox>
+                    <br />
+                    <br />
+                    <asp:Calendar ID="myCalendar1" runat="server"></asp:Calendar>
+                    <br />
+                    <br />
+                    <asp:Button ID="myButton1" runat="server" Text="OK" OnClick="myButton1_Click" />
+                    <br />
+                    <br />
+                    <asp:Label ID="myResultLabel" runat="server" Text="Label"></asp:Label>
+                </div>
 
                     <br />
                     <br />

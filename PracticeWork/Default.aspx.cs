@@ -13,6 +13,12 @@ namespace PracticeWork
         protected void Page_Load(object sender, EventArgs e)
         {
             ComparisonTypeLabel.Text = "greater than";
+            if (!Page.IsPostBack)
+            {
+            myTextBox.Text = "Some Value";
+                myCalendar1.SelectedDate = DateTime.Now.Date.AddDays(2);
+            }
+            
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -217,6 +223,11 @@ namespace PracticeWork
         protected void myCalendar_SelectionChanged(object sender, EventArgs e)
         {
             DateLabel.Text = myCalendar.SelectedDate.ToShortDateString();
+        }
+
+        protected void myButton1_Click(object sender, EventArgs e)
+        {
+            myResultLabel.Text = myTextBox.Text + " - " + myCalendar1.SelectedDate.ToShortDateString();
         }
     }
 }
